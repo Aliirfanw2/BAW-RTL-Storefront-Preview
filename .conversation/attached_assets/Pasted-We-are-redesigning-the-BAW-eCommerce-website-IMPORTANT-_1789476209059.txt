@@ -1,0 +1,70 @@
+We are redesigning the BAW eCommerce website.
+
+IMPORTANT: For now, focus ONLY on creating a working preview of:
+
+1. A new RTL homepage
+2. One complete product page
+
+Do NOT build the full website yet.
+Do NOT change or build the backend.
+Do NOT add an AI chatbot, checkout system, admin dashboard, authentication, or other features outside these two pages.
+
+First, analyze the existing BAW website and use it as the source of truth for the brand direction, product categories, product content, pricing style, promotions, trust elements, and overall eCommerce structure:
+
+https://baw.co.il/
+
+The new design should NOT simply copy the existing website. Instead, take the existing BAW brand/product direction and create a significantly more modern, premium, clean and conversion-focused eCommerce experience.
+
+Requirements:
+
+* RTL-first design for Hebrew
+* Modern Israeli eCommerce aesthetic
+* Mobile-first and fully responsive
+* Clean typography and strong visual hierarchy
+* Premium but approachable look
+* Strong product discovery
+* Clear promotional sections
+* High-quality product cards
+* Strong CTA buttons
+* Trust and delivery/payment messaging
+* Keep BAW's existing commercial strengths such as discounts, promotions, delivery, cash-on-delivery and customer trust
+* Preserve the feeling of a large product marketplace while making the interface much cleaner and easier to shop
+
+For the homepage, plan the experience around:
+
+* Announcement/promotion bar
+* Header and navigation
+* Hero section
+* Main product categories
+* Featured/bestselling products
+* Promotional campaign section
+* Trust/benefits section
+* More product discovery
+* Strong final CTA
+* Footer
+
+For the product page:
+Use ONE real product from the existing BAW website as the reference product. Preserve its real product information, pricing and imagery where possible, but redesign the presentation completely.
+
+Product page should include:
+
+* Breadcrumbs
+* Product image gallery
+* Product title
+* Rating/reviews
+* Current price and previous price
+* Discount/savings
+* Promotion messaging
+* Product options if applicable
+* Quantity selector
+* Strong Add to Cart CTA
+* Delivery/payment information
+* Product description
+* Trust/guarantee information
+* Related products
+
+Before making major changes, inspect the existing project structure and tell me what components and assets can be reused.
+
+Do not modify existing backend functionality.
+
+The goal is to create a polished working visual preview that can be shown to the client for design approval.

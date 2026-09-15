@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "BAW Storefront Preview"
+description = "A polished RTL Hebrew eCommerce preview for BAW, with a modern marketplace homepage and a complete product detail experience grounded in BAW's real catalog and commercial strengths."
+version = "1.0.0"
+id = "artifacts/baw-storefront"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25994
+
+[services.development]
+run = "pnpm --filter @workspace/baw-storefront run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/baw-storefront", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/baw-storefront/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25994"
+BASE_PATH = "/"
