@@ -1,0 +1,203 @@
+Focus ONLY on perfecting the BAW HOMEPAGE for the client preview.
+
+Do not add new sections just to make the page longer. Do not make the homepage crowded.
+
+The most important goal is:
+
+When the client opens the homepage for the FIRST TIME, it should immediately feel PREMIUM, MODERN, CLEAN, TRUSTWORTHY and professionally designed.
+
+### PREMIUM FIRST-GLANCE PRINCIPLE
+
+Prioritize quality over quantity.
+
+Every section must have a clear purpose.
+
+Remove, simplify, or merge anything that feels repetitive or unnecessary.
+
+The page should have generous breathing room, strong visual hierarchy and intentional spacing.
+
+Do NOT try to show everything at once.
+
+### HERO — MOST IMPORTANT
+
+Make the hero the strongest visual moment on the page.
+
+It should immediately communicate:
+
+* BAW brand
+* Useful products
+* Attractive prices
+* Premium shopping experience
+
+Improve:
+
+* Typography hierarchy
+* Headline scale
+* Image quality and composition
+* CTA hierarchy
+* Promotional badge
+* Spacing
+* Visual balance
+
+The hero should feel editorial and premium, not like a generic AI-generated ecommerce template.
+
+Do not overcrowd the hero with too many buttons, labels or messages.
+
+Keep ONE clear primary CTA and ONE secondary CTA.
+
+### HEADER
+
+Make the header extremely clean.
+
+Prioritize:
+
+* BAW logo
+* Search
+* Main navigation
+* Wishlist
+* Account
+* Cart
+
+Avoid unnecessary elements.
+
+The header should feel like a premium retail website.
+
+### CATEGORIES
+
+Keep the category section visually simple.
+
+Do not display too many categories in a way that creates visual noise.
+
+Use consistent cards, excellent spacing and simple icons.
+
+The category section should help users discover products without competing with the hero.
+
+### PRODUCT DISCOVERY
+
+Keep a strong bestseller/product section, but avoid showing too many products.
+
+Use a focused product row with high-quality cards.
+
+Every card should have excellent:
+
+* Image
+* Product name
+* Rating
+* Price
+* Discount
+* Wishlist
+* Add to cart
+
+Prioritize product image quality and whitespace.
+
+### PROMOTIONAL CONTENT
+
+Keep only the strongest promotional concepts.
+
+Do not create multiple visually competing banners.
+
+Use large, beautiful imagery with short messaging and one clear CTA.
+
+The promotions should feel like a premium campaign, not advertisements stacked on top of each other.
+
+### TRUST ELEMENTS
+
+Keep the important trust signals, but present them subtly.
+
+They should support conversion without taking attention away from products.
+
+### VISUAL RHYTHM
+
+Create a strong rhythm throughout the page:
+
+Premium Hero
+↓
+Simple Product Discovery
+↓
+Categories
+↓
+Focused Bestseller Products
+↓
+One Strong Promotional Moment
+↓
+Trust
+↓
+Clean Footer
+
+Do not make every section visually heavy.
+
+Some sections should be quiet so the important sections can stand out.
+
+### SPACING
+
+Use generous whitespace.
+
+Avoid:
+
+* Sections touching each other
+* Huge empty areas with no purpose
+* Crowded text
+* Too many cards
+* Too many colors
+* Too many CTAs
+
+Every section should have comfortable breathing room.
+
+### COLOR
+
+Keep the existing BAW palette:
+
+* Deep teal
+* Warm cream/beige
+* Coral/orange
+
+Use coral as an accent, NOT everywhere.
+
+The page should feel sophisticated rather than colorful for the sake of being colorful.
+
+### TYPOGRAPHY
+
+Create a strong typography hierarchy:
+
+Small eyebrow
+↓
+Large headline
+↓
+Short supporting text
+↓
+Clear CTA
+
+Use consistent heading sizes and line heights throughout the page.
+
+### RESPONSIVE
+
+The premium feeling must remain on mobile.
+
+Do not simply shrink the desktop layout.
+
+Recompose sections specifically for mobile:
+
+* Compact header
+* Strong hero
+* Horizontal category/product scrolling where appropriate
+* Comfortable spacing
+* Clear CTAs
+* No horizontal overflow
+
+### FINAL DESIGN REVIEW
+
+Before finishing, review the homepage at desktop and mobile.
+
+Ask:
+
+"Does this look premium within the first 3 seconds?"
+
+"Is anything unnecessary?"
+
+"Is the page too crowded?"
+
+"Does anything look like an AI-generated template?"
+
+"Is the user's eye naturally guided from hero → discovery → products → purchase?"
+
+If

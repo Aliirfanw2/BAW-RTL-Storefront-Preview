@@ -240,11 +240,6 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
               <a href="#discover" className="btn-primary" data-testid="button-hero-discover">לגלות את הנבחרים <ArrowLeft size={17} /></a>
               <a href="#categories" className="btn-ghost" data-testid="button-hero-categories">לכל הקטגוריות</a>
             </div>
-            <div className="hero-notes">
-              <span className="hero-note"><Check size={16} /> מחירים הוגנים באמת</span>
-              <span className="hero-note"><Check size={16} /> משלוח עד הדלת</span>
-              <span className="hero-note"><Check size={16} /> תשלום בקבלה</span>
-            </div>
           </div>
           <div className="hero-visual fade-in delay-2">
             <div className="hero-visual-card">
@@ -260,35 +255,6 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
               <span className="hero-dots"><i className="active" /><i /><i /></span>
               <button type="button" aria-label="שקופית הבאה"><ChevronLeft size={17} /></button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" id="categories">
-        <div className="container">
-          <div className="section-heading">
-            <div><span className="eyebrow">יש כאן הרבה יותר</span><h2>לפי מה שמתאים לכם</h2></div>
-            <p>קטגוריות שנבחרו לחיים האמיתיים</p>
-          </div>
-          <div className="category-grid">
-            {categories.map(({ title, caption, className, icon: Icon }, index) => (
-              <a href="#discover" className={`category-card ${className} fade-in delay-${index + 1}`} key={title} data-testid={`link-category-${index}`}>
-                <Icon className="category-icon" size={28} strokeWidth={1.7} />
-                <h3>{title}</h3><span>{caption}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="product-discovery" id="popular">
-        <div className="container">
-          <div className="section-heading">
-            <div><span className="eyebrow">הבחירות של הקהילה</span><h2>הכי נמכרים עכשיו</h2></div>
-            <a href="#categories" className="text-link">לכל המוצרים <ArrowLeft size={16} /></a>
-          </div>
-          <div className="product-grid">
-            {popularProducts.map((product, index) => <ProductCard key={product.title} product={product} onAddToCart={onAddToCart} showToast={showToast} index={index} />)}
           </div>
         </div>
       </section>
@@ -317,28 +283,52 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
         </div>
       </section>
 
-      <TrustStrip />
+      <section className="section" id="categories">
+        <div className="container">
+          <div className="section-heading">
+            <div><span className="eyebrow">יש כאן הרבה יותר</span><h2>לפי מה שמתאים לכם</h2></div>
+            <p>קטגוריות שנבחרו לחיים האמיתיים</p>
+          </div>
+          <div className="category-grid">
+            {categories.slice(0, 6).map(({ title, caption, className, icon: Icon }, index) => (
+              <a href="#popular" className={`category-card ${className} fade-in delay-${index + 1}`} key={title} data-testid={`link-category-${index}`}>
+                <Icon className="category-icon" size={28} strokeWidth={1.7} />
+                <h3>{title}</h3><span>{caption}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="product-discovery" id="popular">
+        <div className="container">
+          <div className="section-heading">
+            <div><span className="eyebrow">הבחירות של הקהילה</span><h2>הכי נמכרים עכשיו</h2></div>
+            <a href="#categories" className="text-link">לכל הקטגוריות <ArrowLeft size={16} /></a>
+          </div>
+          <div className="product-grid">
+            {popularProducts.map((product, index) => <ProductCard key={product.title} product={product} onAddToCart={onAddToCart} showToast={showToast} index={index} />)}
+          </div>
+        </div>
+      </section>
 
       <section className="editorial">
         <div className="container">
           <div className="section-heading">
-            <div><span className="eyebrow">הסיבה לחזור</span><h2>הפתעות עם שימושיות</h2></div>
-            <p>לא עוד גלילה אינסופית. רק דברים ששווה לעצור בשבילם.</p>
+            <div><span className="eyebrow">מבצע קבוע ב־BAW</span><h2>יותר דברים טובים,<br />פחות לשלם</h2></div>
+            <p>בוחרים ארבעה פריטים נבחרים ומשלמים על שלושה.</p>
           </div>
           <div className="editorial-grid">
-            <div className="editorial-card editorial-one">
-              <img src={aromaDetail} alt="" />
-              <div className="editorial-overlay" />
-              <div className="editorial-content"><span className="promo-kicker">המחירים שעושים מקום</span><h3>קטן במחיר,<br />גדול ביום־יום</h3><p>פריטים מתחת ל־₪100 שמסדרים פינה, משדרגים הרגל או פשוט משמחים.</p><a href="#popular" className="promo-link">לגלות את המציאות <ArrowLeft size={15} /></a></div>
-            </div>
-            <div className="editorial-card editorial-two">
+            <div className="editorial-card editorial-two editorial-feature">
               <img src={aromaHome} alt="" />
               <div className="editorial-overlay" />
-              <div className="editorial-content"><span className="promo-kicker">מבצע קבוע ב־BAW</span><h3>4 ב־3, כי תמיד<br />יש עוד מקום בבית</h3><p>בוחרים ארבעה פריטים נבחרים ומשלמים על שלושה. גם המוצר הזול ביותר חינם.</p><a href="#popular" className="promo-link">לכל ההטבות <ArrowLeft size={15} /></a></div>
+              <div className="editorial-content"><span className="promo-kicker">4 ב־3, כי תמיד יש עוד מקום בבית</span><h3>מבצע קטן,<br />הבדל גדול</h3><p>גם המוצר הזול ביותר חינם — כדי שיהיה קל לבחור עוד משהו טוב.</p><a href="#popular" className="promo-link">לגלות את הנבחרים <ArrowLeft size={15} /></a></div>
             </div>
           </div>
         </div>
       </section>
+
+      <TrustStrip />
     </main>
   );
 }
