@@ -1,0 +1,189 @@
+Refine the CURRENT BAW homepage design you just created. Do not rebuild it from scratch and do not change the backend.
+
+The current direction is good, but I want the homepage to feel significantly more polished, premium, modern, and production-ready.
+
+Keep the existing BAW visual identity:
+
+* Deep teal/green
+* Warm cream/beige
+* Coral/orange accents
+* Soft rounded corners
+* Clean modern typography
+* Minimal editorial eCommerce aesthetic
+
+IMPORTANT:
+This is still ONLY a frontend design preview. Do not work on backend, database, authentication, checkout, AI chatbot, or other pages.
+
+### 1. Header & Navigation
+
+Improve the header so it feels like a real premium eCommerce website.
+
+* Make the header cleaner and more balanced.
+* Keep the promotional announcement bar.
+* Improve the search bar hierarchy.
+* Use proper wishlist, account, and cart icons.
+* Add clear RTL/Hebrew navigation.
+* Make the main navigation easier to scan.
+* Add a subtle sticky header behavior.
+* Ensure the header works beautifully on mobile with a clean mobile menu.
+
+### 2. Hero Section
+
+The hero is the most important section, so make it much stronger.
+
+* Keep the large lifestyle/product image.
+* Improve the image-to-content balance.
+* Make the headline larger and more visually impactful.
+* Use stronger typography hierarchy.
+* Keep the coral accent for important words.
+* Make the primary CTA more prominent.
+* Add a secondary CTA with a quieter style.
+* Keep the discount badge but make it feel more premium.
+* Add subtle carousel indicators/arrows.
+* Make the whole hero responsive and visually excellent on mobile.
+* Avoid excessive empty space.
+
+### 3. Category Section
+
+Improve the category cards.
+
+Use the actual BAW categories and make them feel like a cohesive product discovery system.
+
+Categories can include:
+
+* Home & Organization
+* Kitchen
+* Sports & Health
+* Children & Babies
+* Fashion
+* Home & Furniture
+* Pets
+* Car
+
+Requirements:
+
+* Consistent card dimensions
+* Better icons
+* Better typography
+* Strong hover interaction
+* Clear clickable appearance
+* Horizontal scrolling on mobile
+* Maintain the soft pastel color system
+
+### 4. Product Discovery
+
+Create a stronger "Bestsellers" / "Popular Products" section.
+
+Product cards should feel like a real modern eCommerce store.
+
+Each card should have:
+
+* High-quality product image
+* Product name
+* Rating and review count
+* Current price
+* Previous price
+* Discount percentage
+* Wishlist icon
+* Add to cart button
+* Subtle hover animation
+
+Make the cards clean and compact without feeling crowded.
+
+Use realistic BAW product content and imagery where available.
+
+### 5. Promotional Sections
+
+Improve the promotional banners.
+
+Keep the BAW concepts:
+
+* "4 for 3"
+* Affordable everyday products
+
+But make them more visually engaging.
+
+Use:
+
+* Real product/lifestyle imagery where possible
+* Strong headline
+* Short supporting copy
+* Clear CTA
+* Better visual hierarchy
+
+Avoid making these sections look like generic colored rectangles.
+
+### 6. Trust / Benefits
+
+Keep the existing trust messaging but make it cleaner:
+
+* Safe purchase
+* 14-day returns
+* Cash on delivery
+* Home delivery
+
+Use simple consistent icons and improve spacing and typography.
+
+### 7. Footer
+
+Refine the footer so it feels more complete and professional.
+
+Include:
+
+* BAW branding
+* Short brand description
+* Customer service links
+* Shopping/discovery links
+* Newsletter signup
+* Social icons
+* Terms / Privacy
+* Copyright
+
+### 8. Overall UX & Visual Polish
+
+This is very important:
+
+* Make spacing consistent throughout the entire page.
+* Establish a clear 8px/4px spacing system.
+* Use consistent border radius values.
+* Use subtle shadows only where necessary.
+* Improve typography hierarchy.
+* Avoid oversized empty areas.
+* Make sections transition naturally into each other.
+* Keep the design elegant rather than overly decorative.
+* Make buttons consistent across the entire website.
+* Add subtle hover and micro-interactions.
+* Make product images feel premium.
+* Ensure everything looks excellent at desktop, tablet and mobile widths.
+
+### RTL / Hebrew
+
+The final design must be genuinely RTL-first.
+
+Make sure:
+
+* Text alignment is correct
+* Navigation direction is correct
+* Icons and arrows follow RTL
+* Product cards work naturally in RTL
+* Spacing/margins are correct
+* Mobile layout remains intuitive
+
+Use proper Hebrew UI labels where the existing BAW content provides them. Do not invent unnecessary Hebrew copy.
+
+### Final Goal
+
+The result should feel like a real, modern Israeli eCommerce brand — not an AI-generated template.
+
+Keep the existing BAW brand personality and commercial concepts, but significantly improve:
+
+* Visual hierarchy
+* Product discovery
+* Conversion
+* Mobile shopping experience
+* Typography
+* Spacing
+* Consistency
+* Overall premium feel
+
+Do not add backend functionality. Focus only on making this homepage preview visually excellent and client-ready.

@@ -4,26 +4,34 @@ import {
   ArrowLeft,
   Banknote,
   Baby,
+  CarFront,
   Check,
   ChevronLeft,
   ChevronRight,
   CreditCard,
   Dumbbell,
+  Facebook,
   Heart,
   Home as HomeIcon,
+  Instagram,
   LockKeyhole,
+  Mail,
   Menu,
   Minus,
   PackageCheck,
+  PawPrint,
   Plus,
   RotateCcw,
   Search,
+  Shirt,
   ShieldCheck,
+  Sofa,
   ShoppingBag,
   Sparkles,
   Star,
   Truck,
   Utensils,
+  UserRound,
 } from 'lucide-react';
 import { type ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -44,6 +52,17 @@ const categories = [
   { title: 'מטבח', caption: 'קטן, חכם, שימושי', className: 'cat-kitchen', icon: Utensils },
   { title: 'ספורט ובריאות', caption: 'להרגיש טוב בבית', className: 'cat-health', icon: Dumbbell },
   { title: 'ילדים ותינוקות', caption: 'בחירות שעובדות', className: 'cat-kids', icon: Baby },
+  { title: 'אופנה', caption: 'פריטים עם אופי', className: 'cat-fashion', icon: Shirt },
+  { title: 'בית וריהוט', caption: 'משדרגים את החלל', className: 'cat-furniture', icon: Sofa },
+  { title: 'חיות מחמד', caption: 'גם להם מגיע', className: 'cat-pets', icon: PawPrint },
+  { title: 'רכב', caption: 'נוסעים יותר חכם', className: 'cat-car', icon: CarFront },
+];
+
+const popularProducts = [
+  { title: 'פח אשפה חכם עם דלת כפולה דגם AROMA', image: aromaHero, rating: '4.9', reviews: '2,700', price: '₪200', oldPrice: '₪600', discount: '67%-', tag: 'הכי נמכר' },
+  { title: 'שידת לילה חכמה עם טעינה אלחוטית', image: aromaHome, rating: '4.8', reviews: '523', price: '₪350', oldPrice: '₪700', discount: '50%-', tag: 'חדש ב־BAW' },
+  { title: 'ארון אחסון 5 מדפים עם דלתות וגלגלים', image: aromaDetail, rating: '4.8', reviews: '1,954', price: '₪300', oldPrice: '₪600', discount: '50%-', tag: 'בחירת הקהילה' },
+  { title: 'מכשיר עיסוי OTTOMAN עם חימום', image: aromaHome, rating: '4.7', reviews: '892', price: '₪400', oldPrice: '₪800', discount: '50%-', tag: 'רק השבוע' },
 ];
 
 function Header({
@@ -90,6 +109,9 @@ function Header({
           <div className="header-actions">
             <button className="icon-btn" type="button" onClick={onFavorite} aria-label="מועדפים" data-testid="button-favorites">
               <Heart size={19} />
+            </button>
+            <button className="icon-btn account-btn" type="button" onClick={() => setMenuOpen(true)} aria-label="החשבון שלי" data-testid="button-account">
+              <UserRound size={19} />
             </button>
             <Link href="/product" className="icon-btn" aria-label="סל קניות" data-testid="link-cart">
               <ShoppingBag size={19} />
@@ -140,6 +162,7 @@ function TrustStrip() {
 }
 
 function Footer() {
+  const [subscribed, setSubscribed] = useState(false);
   return (
     <footer className="footer">
       <div className="container">
@@ -150,11 +173,55 @@ function Footer() {
           </div>
           <div><h4>לגלות ב־BAW</h4><Link href="/#categories">כל הקטגוריות</Link><Link href="/#discover">הנבחרים שלנו</Link><Link href="/product">מוצר השבוע</Link></div>
           <div><h4>שירות לקוחות</h4><a href="mailto:hello@baw.co.il">כתבו לנו</a><a href="#why-baw">משלוחים והחזרות</a><a href="#why-baw">שאלות נפוצות</a></div>
-          <div><h4>הבטחות קטנות</h4><p style={{ margin: 0 }}>מחירים נגישים. בחירות חכמות. שירות בגובה העיניים.</p></div>
+          <div className="footer-newsletter">
+            <h4>להישאר בעניינים</h4>
+            <p>מבצעים חדשים, מוצרים שחזרו למלאי והפתעות קטנות — פעם בשבוע.</p>
+            {subscribed ? (
+              <div className="newsletter-success"><Check size={16} /> נרשמתם בהצלחה</div>
+            ) : (
+              <form onSubmit={(event) => { event.preventDefault(); setSubscribed(true); }} className="newsletter-form">
+                <div className="newsletter-input"><Mail size={16} /><input type="email" required placeholder="האימייל שלכם" aria-label="האימייל שלכם" /></div>
+                <button type="submit" className="newsletter-submit">להצטרף</button>
+              </form>
+            )}
+            <div className="social-links" aria-label="רשתות חברתיות">
+              <a href="#footer" aria-label="אינסטגרם"><Instagram size={17} /></a>
+              <a href="#footer" aria-label="פייסבוק"><Facebook size={17} /></a>
+              <a href="mailto:hello@baw.co.il" aria-label="דוא״ל"><Mail size={17} /></a>
+            </div>
+          </div>
         </div>
-        <div className="footer-bottom"><span>© 2024 BAW Marketplace</span><span>נבנה כדי שתמצאו את מה שלא ידעתם שחיפשתם</span></div>
+        <div className="footer-bottom"><span>© 2026 BAW Marketplace</span><span>תנאי שימוש · מדיניות פרטיות · מדיניות משלוחים והחזרות</span></div>
       </div>
     </footer>
+  );
+}
+
+function ProductCard({ product, onAddToCart, showToast, index }: {
+  product: typeof popularProducts[number];
+  onAddToCart: (quantity: number) => void;
+  showToast: (message: string) => void;
+  index: number;
+}) {
+  const [favorite, setFavorite] = useState(false);
+  return (
+    <article className={`product-card fade-in delay-${(index % 3) + 1}`} data-testid={`product-card-${index}`}>
+      <div className="product-card-media">
+        <Link href="/product" className="product-card-image">
+          <img src={product.image} alt={product.title} />
+        </Link>
+        <span className="product-badge">{product.tag}</span>
+        <button className={`product-wishlist ${favorite ? 'is-favorite' : ''}`} type="button" onClick={() => { setFavorite((value) => !value); showToast(favorite ? 'הוסר מהמועדפים' : 'נשמר במועדפים'); }} aria-label="שמירה למועדפים">
+          <Heart size={17} fill={favorite ? 'currentColor' : 'none'} />
+        </button>
+      </div>
+      <div className="product-card-body">
+        <Link href="/product" className="product-card-title">{product.title}</Link>
+        <div className="product-card-rating"><span className="stars"><Star size={13} fill="currentColor" /> {product.rating}</span><span>({product.reviews})</span></div>
+        <div className="product-card-price"><strong>{product.price}</strong><del>{product.oldPrice}</del><span>{product.discount}</span></div>
+        <button className="product-card-cart" type="button" onClick={() => { onAddToCart(1); showToast('המוצר נוסף לסל'); }}><ShoppingBag size={16} /> להוסיף לסל</button>
+      </div>
+    </article>
   );
 }
 
@@ -175,6 +242,7 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
             <div className="hero-notes">
               <span className="hero-note"><Check size={16} /> מחירים הוגנים באמת</span>
               <span className="hero-note"><Check size={16} /> משלוח עד הדלת</span>
+              <span className="hero-note"><Check size={16} /> תשלום בקבלה</span>
             </div>
           </div>
           <div className="hero-visual fade-in delay-2">
@@ -185,6 +253,11 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
             <div className="hero-float">
               <small>הנבחר של השבוע</small>
               <b>פח AROMA חכם</b><strong>67%-</strong>
+            </div>
+            <div className="hero-controls">
+              <button type="button" aria-label="שקופית קודמת"><ChevronRight size={17} /></button>
+              <span className="hero-dots"><i className="active" /><i /><i /></span>
+              <button type="button" aria-label="שקופית הבאה"><ChevronLeft size={17} /></button>
             </div>
           </div>
         </div>
@@ -203,6 +276,18 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
                 <h3>{title}</h3><span>{caption}</span>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="product-discovery" id="popular">
+        <div className="container">
+          <div className="section-heading">
+            <div><span className="eyebrow">הבחירות של הקהילה</span><h2>הכי נמכרים עכשיו</h2></div>
+            <a href="#categories" className="text-link">לכל המוצרים <ArrowLeft size={16} /></a>
+          </div>
+          <div className="product-grid">
+            {popularProducts.map((product, index) => <ProductCard key={product.title} product={product} onAddToCart={onAddToCart} showToast={showToast} index={index} />)}
           </div>
         </div>
       </section>
@@ -240,8 +325,16 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
             <p>לא עוד גלילה אינסופית. רק דברים ששווה לעצור בשבילם.</p>
           </div>
           <div className="editorial-grid">
-            <div className="editorial-card editorial-one"><span className="circle" /><span className="line-art" /><h3>קטן במחיר,<br />גדול ביום־יום</h3><p>פריטים מתחת ל־₪100 שמסדרים פינה, משדרגים הרגל או פשוט משמחים.</p></div>
-            <div className="editorial-card editorial-two"><span className="circle" /><span className="line-art" /><h3>4 ב־3, כי תמיד<br />יש עוד מקום בבית</h3><p>בוחרים ארבעה פריטים נבחרים ומשלמים על שלושה. זה הזמן לצרף את מה ששמרתם לאחר כך.</p></div>
+            <div className="editorial-card editorial-one">
+              <img src={aromaDetail} alt="" />
+              <div className="editorial-overlay" />
+              <div className="editorial-content"><span className="promo-kicker">המחירים שעושים מקום</span><h3>קטן במחיר,<br />גדול ביום־יום</h3><p>פריטים מתחת ל־₪100 שמסדרים פינה, משדרגים הרגל או פשוט משמחים.</p><a href="#popular" className="promo-link">לגלות את המציאות <ArrowLeft size={15} /></a></div>
+            </div>
+            <div className="editorial-card editorial-two">
+              <img src={aromaHome} alt="" />
+              <div className="editorial-overlay" />
+              <div className="editorial-content"><span className="promo-kicker">מבצע קבוע ב־BAW</span><h3>4 ב־3, כי תמיד<br />יש עוד מקום בבית</h3><p>בוחרים ארבעה פריטים נבחרים ומשלמים על שלושה. גם המוצר הזול ביותר חינם.</p><a href="#popular" className="promo-link">לכל ההטבות <ArrowLeft size={15} /></a></div>
+            </div>
           </div>
         </div>
       </section>
