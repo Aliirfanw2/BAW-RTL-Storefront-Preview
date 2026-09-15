@@ -113,6 +113,16 @@ function Header({
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
   const isHome = location === '/';
+  const announcementItems = (
+    <>
+      <span className="announcement-tag announcement-hot"><Flame size={18} /><span><strong>מחירים הכי זולים בארץ</strong></span></span>
+      <span className="announcement-tag"><Gift size={18} /><span><strong>4 ב־3</strong> על פריטים נבחרים</span></span>
+      <span className="announcement-tag"><Banknote size={18} /><span>תשלום במזומן לשליח</span></span>
+      <span className="announcement-tag"><Truck size={18} /><span>משלוח עד הבית</span></span>
+      <a className="announcement-tag announcement-phone" href="tel:0535377780"><Phone size={17} /><span>053-5377780</span></a>
+      <span className="announcement-tag announcement-deals"><Star size={18} fill="currentColor" /><span>עד 50% הנחה · <strong>מבצעים חמים</strong></span></span>
+    </>
+  );
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 24);
@@ -123,12 +133,10 @@ function Header({
   return (
     <>
       <div className="announcement" data-testid="banner-promotion">
-        <span className="announcement-tag announcement-hot"><Flame size={18} /><span><strong>מחירים הכי זולים בארץ</strong></span></span>
-        <span className="announcement-tag"><Gift size={18} /><span><strong>4 ב־3</strong> על פריטים נבחרים</span></span>
-        <span className="announcement-tag"><Banknote size={18} /><span>תשלום במזומן לשליח</span></span>
-        <span className="announcement-tag"><Truck size={18} /><span>משלוח עד הבית</span></span>
-        <a className="announcement-tag announcement-phone" href="tel:0535377780"><Phone size={17} /><span>053-5377780</span></a>
-        <span className="announcement-tag announcement-deals"><Star size={18} fill="currentColor" /><span>עד 50% הנחה · <strong>מבצעים חמים</strong></span></span>
+        <div className="announcement-track">
+          <div className="announcement-group">{announcementItems}</div>
+          <div className="announcement-group" aria-hidden="true">{announcementItems}</div>
+        </div>
       </div>
       <header className={`header ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="container header-inner">
@@ -431,7 +439,7 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
           </motion.div>
           <motion.figure className="hero-visual" initial={reduceMotion ? false : { opacity: 0, scale: 1.03, x: -12 }} animate={{ opacity: 1, scale: 1, x: 0 }} transition={{ duration: reduceMotion ? 0.01 : 0.7, ease: 'easeOut', delay: reduceMotion ? 0 : 0.12 }}>
             <img src={aromaHero} alt="פח אשפה חכם בצבע שמנת" />
-            <figcaption><strong>Smart Trash Can</strong><span>₪200</span></figcaption>
+            <figcaption><span className="hero-caption-kicker">הנבחר של השבוע</span><strong>פח AROMA חכם</strong><em>-33%</em></figcaption>
           </motion.figure>
         </div>
       </section>
