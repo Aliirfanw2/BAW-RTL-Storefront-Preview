@@ -211,6 +211,7 @@ function ProductCard({ product, onAddToCart, showToast, index }: {
           <img src={product.image} alt={product.title} />
         </Link>
         <span className="product-badge">{product.tag}</span>
+        <span className="product-discount">{product.discount} הנחה</span>
         <button className={`product-wishlist ${favorite ? 'is-favorite' : ''}`} type="button" onClick={() => { setFavorite((value) => !value); showToast(favorite ? 'הוסר מהמועדפים' : 'נשמר במועדפים'); }} aria-label="שמירה למועדפים">
           <Heart size={17} fill={favorite ? 'currentColor' : 'none'} />
         </button>
@@ -218,7 +219,7 @@ function ProductCard({ product, onAddToCart, showToast, index }: {
       <div className="product-card-body">
         <Link href="/product" className="product-card-title">{product.title}</Link>
         <div className="product-card-rating"><span className="stars"><Star size={13} fill="currentColor" /> {product.rating}</span><span>({product.reviews})</span></div>
-        <div className="product-card-price"><strong>{product.price}</strong><del>{product.oldPrice}</del><span>{product.discount}</span></div>
+        <div className="product-card-price"><strong>{product.price}</strong><del>{product.oldPrice}</del><span className="product-price-discount">{product.discount}</span></div>
         <button className="product-card-cart" type="button" onClick={() => { onAddToCart(1); showToast('המוצר נוסף לסל'); }}><ShoppingBag size={16} /> להוסיף לסל</button>
       </div>
     </article>

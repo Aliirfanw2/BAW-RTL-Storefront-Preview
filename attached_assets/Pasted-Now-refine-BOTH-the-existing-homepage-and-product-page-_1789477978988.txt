@@ -1,0 +1,248 @@
+Now refine BOTH the existing homepage and product page together.
+
+Do NOT rebuild them from scratch.
+Do NOT add new pages.
+Do NOT change the backend, database, checkout, authentication, or AI functionality.
+
+The Hebrew content and RTL layout are already implemented correctly, so DO NOT change the language or translate any content.
+
+The goal is to make the current two pages feel like one polished, premium, professional BAW eCommerce website.
+
+### 1. OVERALL DESIGN QUALITY
+
+Keep the current BAW visual identity:
+
+* Deep teal
+* Warm cream/beige
+* Coral/orange accents
+* Soft pastel colors
+* Rounded cards
+* Clean modern typography
+
+Improve the overall design so it feels:
+
+* Premium
+* Modern
+* Elegant
+* Trustworthy
+* Conversion-focused
+* Professionally designed rather than AI-generated
+
+Do not introduce unnecessary visual effects or excessive animations.
+
+### 2. HEADER
+
+Refine the existing header:
+
+* Improve spacing and alignment
+* Make the logo size and placement feel balanced
+* Improve search bar proportions
+* Make wishlist, account and cart icons consistent
+* Improve navigation hierarchy
+* Make the header feel lighter and more premium
+* Keep the existing RTL behavior
+* Add subtle sticky behavior if appropriate
+
+### 3. HOMEPAGE HERO
+
+Refine the hero section significantly.
+
+* Improve typography hierarchy
+* Make the main headline more impactful
+* Improve spacing between headline, description and CTAs
+* Make the primary CTA more prominent
+* Keep the secondary CTA visually quieter
+* Improve the product/lifestyle image composition
+* Make the promotional badge cleaner
+* Reduce unnecessary empty space
+* Keep the hero visually balanced between content and image
+
+The hero should immediately communicate:
+BAW = useful products + good prices + easy shopping.
+
+### 4. CATEGORY SECTION
+
+Refine the category cards:
+
+* Consistent card sizing
+* Better icon sizing
+* Better text hierarchy
+* Better spacing
+* More polished pastel backgrounds
+* Clear hover interaction
+* Make the cards feel clickable
+* Improve mobile horizontal scrolling
+
+Avoid making the section look like a generic dashboard.
+
+### 5. PRODUCT CARDS
+
+This is one of the most important improvements.
+
+Create a highly polished eCommerce product-card system.
+
+Each card should have:
+
+* Consistent image ratio
+* Clean product image area
+* Wishlist button
+* Product name
+* Rating/review count
+* Current price
+* Previous price
+* Discount badge
+* Clear Add to Cart button
+
+Improve:
+
+* Card spacing
+* Typography
+* Price hierarchy
+* Image presentation
+* Hover states
+* Button styling
+
+Make all product cards visually consistent across the homepage and product page.
+
+### 6. FEATURED PRODUCT SECTION
+
+Refine the featured product section so it feels more editorial and premium.
+
+Improve:
+
+* Image-to-content ratio
+* Typography
+* CTA placement
+* Price presentation
+* Supporting information
+* Section spacing
+
+Avoid excessive empty space.
+
+### 7. PROMOTIONAL BANNERS
+
+Refine the existing promotional banners.
+
+Keep the existing BAW promotional concepts and messaging, but improve:
+
+* Visual hierarchy
+* Image treatment
+* Typography
+* CTA design
+* Spacing
+* Border radius
+* Composition
+
+They should feel like premium campaign banners rather than simple colored blocks.
+
+### 8. TRUST / BENEFITS SECTION
+
+Keep the existing trust points:
+
+* Safe purchase
+* Returns
+* Cash on delivery
+* Home delivery
+
+Refine the layout:
+
+* Consistent icons
+* Better spacing
+* Better typography
+* Cleaner separators
+* Stronger visual hierarchy
+
+### 9. PRODUCT PAGE
+
+Refine the existing product page without changing its structure dramatically.
+
+The purchase area should have a very clear hierarchy:
+
+Product → Rating → Price → Discount → Benefits → Quantity → Add to Cart
+
+Make the Add to Cart CTA the strongest action on the page.
+
+Improve:
+
+* Product image gallery
+* Thumbnail styling
+* Main image presentation
+* Price hierarchy
+* Discount badge
+* Product benefits
+* Quantity selector
+* Wishlist button
+* Delivery/payment information
+* Product information section
+
+Make the product page feel trustworthy and easy to purchase from.
+
+### 10. MICRO-INTERACTIONS
+
+Add subtle professional interactions only where useful:
+
+* Product card hover
+* Image hover
+* Button hover
+* Wishlist interaction
+* Category hover
+* Smooth transitions
+
+Keep animations fast and subtle. No excessive animations.
+
+### 11. RESPONSIVE DESIGN
+
+Make sure BOTH pages work perfectly on:
+
+* Desktop
+* Tablet
+* Mobile
+
+Especially improve mobile:
+
+* Header
+* Navigation
+* Search
+* Hero
+* Category cards
+* Product cards
+* Product gallery
+* Purchase section
+* Promotional banners
+
+There must be no horizontal overflow.
+
+### 12. DESIGN SYSTEM CONSISTENCY
+
+Both pages must use exactly the same design language:
+
+* Typography
+* Colors
+* Buttons
+* Icons
+* Border radius
+* Shadows
+* Spacing
+* Product cards
+* Header
+* Footer
+
+Create/reuse shared components where appropriate so the two pages feel like one real website.
+
+### FINAL QUALITY CHECK
+
+Before finishing, review both pages as if you were a senior eCommerce designer.
+
+Fix anything that feels:
+
+* Too empty
+* Too crowded
+* Unbalanced
+* Inconsistent
+* Generic
+* AI-generated
+* Visually outdated
+
+Do NOT add new functionality or pages.
+
+The final result should look like a polished, premium BAW redesign that is ready to present to the client.
