@@ -1,0 +1,353 @@
+I want you to take the CURRENT BAW homepage and elevate the visual design substantially.
+
+Do NOT rebuild the website technically.
+Do NOT change the backend.
+Do NOT add new functionality.
+
+This is a DESIGN AND UX REFINEMENT.
+
+The current design has a good foundation, but it still feels somewhat like an AI-generated concept. I want it to feel like a real, professionally art-directed eCommerce brand.
+
+Think of the quality level of a premium modern DTC / lifestyle eCommerce website.
+
+The design should feel:
+
+* Premium
+* Editorial
+* Calm
+* Confident
+* Modern
+* Commercial
+* Highly intentional
+
+The first impression should be strong within 3 seconds.
+
+---
+
+## 1. CHANGE THE DESIGN PHILOSOPHY
+
+Do NOT try to make the page impressive by adding more content.
+
+Instead:
+
+LESS CONTENT
+BETTER CONTENT
+MORE WHITESPACE
+STRONGER TYPOGRAPHY
+BETTER IMAGERY
+CLEARER HIERARCHY
+
+Every section should have ONE clear purpose.
+
+If a section does not add meaningful value, simplify it.
+
+Avoid:
+
+* Too many decorative elements
+* Too many badges
+* Too many CTAs
+* Excessive rounded cards
+* Repetitive promotional messages
+* Large empty areas without purpose
+* Sections that all look visually identical
+
+---
+
+## 2. HERO — MAKE THIS EXCEPTIONAL
+
+The hero should be the strongest part of the entire website.
+
+Use a sophisticated split layout:
+
+IMAGE + BRAND MESSAGE
+
+The product/lifestyle image should feel like a real campaign photograph.
+
+Improve:
+
+* Image scale
+* Image cropping
+* Image quality
+* Typography
+* Spacing
+* CTA placement
+
+Use a very large, confident headline.
+
+Keep only:
+
+* Small eyebrow
+* Large headline
+* Short supporting text
+* One primary CTA
+* One secondary CTA
+
+Do not put too many badges or floating elements over the hero image.
+
+The product promotion can remain, but make it subtle and elegant.
+
+The hero should feel closer to a premium lifestyle brand than a discount marketplace.
+
+---
+
+## 3. HEADER — MINIMAL AND EXPENSIVE
+
+Redesign the header to feel extremely clean.
+
+Prioritize:
+
+* BAW logo
+* Search
+* Main navigation
+* Wishlist
+* Account
+* Cart
+
+Reduce visual noise.
+
+Use subtle borders rather than heavy boxes.
+
+Make the header feel light and sophisticated.
+
+Keep the RTL layout.
+
+---
+
+## 4. CATEGORY DISCOVERY — SIMPLIFY IT
+
+The current pastel category cards are too dominant.
+
+Make the category section more elegant.
+
+Instead of large dashboard-like cards, create a refined category navigation system.
+
+Use:
+
+* Smaller cards
+* Better typography
+* Simple icons
+* More whitespace
+* Consistent proportions
+
+The user should feel like they are browsing a curated store, not an admin dashboard.
+
+Keep the pastel BAW palette but use it more subtly.
+
+---
+
+## 5. PRODUCT DISCOVERY — MAKE PRODUCTS THE HERO
+
+The products should be visually more important than the decorative UI.
+
+Create a clean editorial product grid.
+
+Use fewer products per row with larger, better images.
+
+Each card should have:
+
+Product image
+Wishlist
+Small badge when necessary
+Product name
+Rating
+Price
+Previous price
+Discount
+Add to cart
+
+Do not put every possible label on every card.
+
+Only show badges when they communicate something meaningful.
+
+Use strong product photography and generous whitespace.
+
+---
+
+## 6. FEATURED PRODUCT
+
+Keep ONE featured product story.
+
+Make it feel like a campaign/editorial section.
+
+Large lifestyle image on one side.
+
+Short product story on the other.
+
+Use:
+
+* Small eyebrow
+* Strong headline
+* 2–3 lines of supporting copy
+* Price
+* One CTA
+
+Do not overload this section.
+
+This should feel like a premium product advertisement.
+
+---
+
+## 7. PROMOTIONAL SECTION
+
+Keep the "4 for 3" promotion because it is commercially important.
+
+But redesign it as ONE strong campaign banner.
+
+Do not make it look like a generic colored rectangle.
+
+Use:
+
+* Large lifestyle/product image
+* Strong headline
+* Short explanation
+* One CTA
+
+The promotion should feel like part of the brand, not an advertisement inserted into the page.
+
+---
+
+## 8. TRUST SECTION
+
+Keep:
+
+Safe purchase
+14-day returns
+Cash payment
+Home delivery
+
+But make this section extremely subtle.
+
+Use a clean horizontal benefits bar with small icons.
+
+It should reassure the customer without becoming a major visual section.
+
+---
+
+## 9. FOOTER
+
+Make the footer cleaner and more premium.
+
+Use:
+
+* BAW logo
+* Short brand statement
+* Customer service
+* Shopping links
+* Newsletter
+* Social links
+* Legal links
+
+Use generous spacing.
+
+Avoid making the footer visually heavy.
+
+---
+
+# VISUAL SYSTEM
+
+Use the existing BAW palette:
+
+Deep teal
+Warm cream
+Coral orange
+Soft muted pastels
+
+But reduce the amount of coral.
+
+Coral should be an accent color used for:
+
+* Primary CTA
+* Important promotion
+* Small highlights
+
+Do not use coral everywhere.
+
+---
+
+# TYPOGRAPHY
+
+Typography should feel editorial and premium.
+
+Create strong contrast between:
+
+Eyebrow
+Large headline
+Supporting text
+Product information
+
+Use fewer font sizes but make the hierarchy much stronger.
+
+Avoid excessive bold text.
+
+---
+
+# SPACING
+
+This is extremely important.
+
+Use generous, intentional spacing.
+
+Every section should have breathing room.
+
+But do NOT create huge blank spaces.
+
+The page should feel spacious, not empty.
+
+---
+
+# MOTION
+
+Use subtle premium interactions:
+
+* Smooth image hover
+* Gentle product card lift
+* Button hover
+* Image transitions
+* Subtle navigation interactions
+
+No excessive animations.
+
+No flashy effects.
+
+---
+
+# MOBILE
+
+Do NOT simply shrink the desktop layout.
+
+Design the mobile experience intentionally.
+
+On mobile:
+
+* Compact premium header
+* Strong hero
+* Horizontal category navigation
+* 2-column product grid where appropriate
+* Large product imagery
+* Clear CTA
+* Comfortable spacing
+* No horizontal overflow
+
+---
+
+# FINAL ART DIRECTION
+
+The final homepage should feel like:
+
+"A premium Israeli lifestyle marketplace that happens to have great prices."
+
+NOT:
+
+"An AI-generated ecommerce template."
+
+Use inspiration from high-quality modern editorial eCommerce design, but DO NOT copy another website.
+
+Create an original BAW design language.
+
+The final page should make the client immediately think:
+
+"This looks like a real professional redesign."
+
+Before finishing, remove anything that feels unnecessary, repetitive, generic or visually noisy.
+
+Prioritize QUALITY over the amount of content.

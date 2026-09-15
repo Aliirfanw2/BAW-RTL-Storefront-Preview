@@ -245,15 +245,9 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
             <div className="hero-visual-card">
               <img src={aromaHero} alt="פח אשפה חכם בצבע שמנת" />
             </div>
-            <div className="hero-sticker">מוצאים<br />דברים<br />טובים</div>
             <div className="hero-float">
               <small>הנבחר של השבוע</small>
               <b>פח AROMA חכם</b><strong>67%-</strong>
-            </div>
-            <div className="hero-controls">
-              <button type="button" aria-label="שקופית קודמת"><ChevronRight size={17} /></button>
-              <span className="hero-dots"><i className="active" /><i /><i /></span>
-              <button type="button" aria-label="שקופית הבאה"><ChevronLeft size={17} /></button>
             </div>
           </div>
         </div>
@@ -272,7 +266,7 @@ function HomePage({ onAddToCart, search, showToast }: { onAddToCart: (quantity: 
               <h3>פח אשפה חכם<br />עם דלת כפולה</h3>
               <p>נפתח לבד כשצריך, נשאר סגור כשלא. עיצוב נקי, פעולה שקטה ונפח שמתאים בדיוק לשגרה של בית אמיתי.</p>
               <div className="price-line"><span className="price-now">₪200</span><span className="price-old">₪600</span><span className="discount">67% הנחה</span></div>
-              <div><Link href="/product" className="btn-primary" data-testid="button-featured-details">רוצה לראות מקרוב <ArrowLeft size={17} /></Link><button className="btn-ghost" style={{ marginInlineStart: 9, color: '#f8efe0', borderColor: 'rgba(248,239,224,.35)' }} onClick={() => { onAddToCart(1); showToast('המוצר נוסף לסל'); }} data-testid="button-featured-add">הוספה לסל</button></div>
+              <div><Link href="/product" className="btn-primary" data-testid="button-featured-details">רוצה לראות מקרוב <ArrowLeft size={17} /></Link></div>
               <div className="benefits">
                 <div className="benefit"><PackageCheck size={19} /><strong>נשלח מהר</strong><span>3–7 ימים</span></div>
                 <div className="benefit"><CreditCard size={19} /><strong>משלמים בדרך</strong><span>גם במזומן</span></div>
